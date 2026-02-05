@@ -7,6 +7,7 @@ age_2030 = age+4
 
 print(f"Hey {name}, you will be {age_2030} years old in 2030.")
 
+
 # task 2
 
 total_bill = float(input("Enter total bill amount: "))
