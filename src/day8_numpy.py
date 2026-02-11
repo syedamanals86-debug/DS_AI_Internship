@@ -24,7 +24,7 @@ print("\nCentered Scores (After Normalization):")
 
 print(scores)
 print(subject_means)
-print(centered_scores)
+print(centered_scores) 
 
 
 # task 2
