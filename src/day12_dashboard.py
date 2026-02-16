@@ -31,6 +31,7 @@ plt.title("Monthly Sales Trend")
 plt.xlabel("Month")
 plt.ylabel("Total Sales")
 
+
 # Prevent overlap
 plt.tight_layout()
 
