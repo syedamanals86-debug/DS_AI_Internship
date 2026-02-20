@@ -56,36 +56,7 @@ df.head()
 
 # task 3
 
-import numpy as np
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-np.random.seed(42)
-
-population = np.random.exponential(scale=50000, size=100000)
-
-df = pd.DataFrame({"Income": population})
-
-# plot histogram for skewed data
-plt.figure(figsize=(6,4))
-sns.histplot(df["Income"], bins=50, kde=True)
-plt.title("Original Population Distribution (Right-Skewed)")
-plt.show()
-
-sample_means = []
-
-for _ in range(1000):
-    sample = np.random.choice(population, size=30)
-    sample_means.append(sample.mean())
-
-sample_means = pd.Series(sample_means)
-
-# plot histogram for sample distrubution
-plt.figure(figsize=(6,4))
-sns.histplot(sample_means, bins=30, kde=True)
-plt.title("Distribution of Sample Means (n=30, 1000 samples)")
-plt.show()
+ 
 
 
 
